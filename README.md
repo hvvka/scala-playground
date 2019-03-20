@@ -11,3 +11,5 @@ Labs from functional and concurrent programming feat. Scala.
 2. [tail recursion, pattern matching](./lab2/lista2.sc)
 
 3. [higher order functions](./lab3/lista3.sc)
+
+4. [algebraic data types](./lab4/lista4.sc)
