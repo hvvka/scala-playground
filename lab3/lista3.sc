@@ -1,7 +1,7 @@
 // Hanna Grodzicka
 
 
-// 1a
+/* 1a. Checks whether the list satisfies the predicate – uses pattern and recursion matching */
 def existsA[A](xs: List[A])(p: A => Boolean): Boolean = xs match {
   case h :: t => p(h) || existsA(t)(p)
   case Nil => false
@@ -12,7 +12,7 @@ existsA(List(1))(_ == 1)
 !existsA(List(1, 2, 3))(_ == 4)
 !existsA(List())(_ == 11)
 
-// 1b
+/* 1b. Checks whether the list satisfies the predicate – uses List.foldLeft */
 def existsB[A](xs: List[A])(p: A => Boolean): Boolean = {
   xs.foldLeft(false)(_ || p(_))
 }
@@ -22,7 +22,7 @@ existsB(List(1))(_ == 1)
 !existsB(List(1, 2, 3))(_ == 4)
 !existsB(List())(_ == 11)
 
-// 1c
+/* 1c. Checks whether the list satisfies the predicate – uses List.foldLRight */
 def existsC[A](xs: List[A])(p: A => Boolean): Boolean = {
   xs.foldRight(false)(p(_) || _)
 }
@@ -34,7 +34,7 @@ existsC(List(1))(_ == 1)
 
 
 
-// 2
+/* 2. Filters the list based on the predicate – uses List.foldRight.*/
 def filter[A](xs: List[A])(p: A => Boolean): List[A] =
   xs.foldRight(List[A]())((h, acc) => if (p(h)) h :: acc else acc)
 
@@ -46,7 +46,11 @@ filter(List())(_ != 0) == List()
 
 
 
-// 3a
+/* 
+  3a. Returns a list with the same values as the xs list from which 
+  the first element that satisfies the predicate has been removed. 
+  Normal recursion.
+ */
 def remove1[A](xs: List[A])(p: A => Boolean): List[A] = xs match {
   case h :: t => if (p(h)) t else h :: remove1(t)(p)
   case Nil => List()
@@ -56,7 +60,11 @@ remove1(List(1, 2, 3, 2, 5))(_ == 2) == List(1, 3, 2, 5)
 remove1(List(1, 3, 5))(_ == 2) == List(1, 3, 5)
 remove1(List())(_ == 2) == List()
 
-// 3b
+/* 
+  3b. Returns a list with the same values as the xs list from which 
+  the first element that satisfies the predicate has been removed. 
+  The most effective tail recursion – using List.reverse_:::.
+ */
 def remove2[A](xs: List[A])(p: A => Boolean): List[A] = {
   def remove2Iter(acc: List[A], xs: List[A]): List[A] = {
     xs match {
@@ -74,7 +82,11 @@ remove2(List())(_ == 2) == List()
 
 
 
-// 4
+/* 
+  4. Returns a pair: 
+  (xs take n, xs drop n)
+  but without passing the list twice.
+ */
 def splitAt[A](xs: List[A])(n: Int): (List[A], List[A]) = {
   def splitAtIter(x1: List[A], x2: List[A])(n: Int): (List[A], List[A]) = x2 match {
     case h :: t => if (n >= 1) splitAtIter(h :: x1, t)(n - 1) else (x1.reverse, x2)
