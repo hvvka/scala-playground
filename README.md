@@ -15,3 +15,5 @@ Labs from functional and concurrent programming feat. Scala.
 1. [algebraic data types](./lab4/lista4.sc)
 
 1. [classes, features and objects](./lab5/lista5.sc)
+
+1. [eager and lazy evaluation, passing arguments to a function](./lab6./lista6.sc)
