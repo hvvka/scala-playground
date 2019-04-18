@@ -18,4 +18,6 @@ Labs from functional and concurrent programming feat. Scala.
 
 1. [eager and lazy evaluation, passing arguments to a function](./lab6./lista6.sc)
 
-1. [Variantity and subtype polymorphism](./lab7)
+1. [variantity and subtype polymorphism](./lab7/Lista7.scala)
+
+1. [nominal and structural types](./lab8/Lista8.scala)
