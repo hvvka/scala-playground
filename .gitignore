@@ -1,3 +1,4 @@
 playground/
 *.pdf
 .DS_Store
+lab9/exercise.scala

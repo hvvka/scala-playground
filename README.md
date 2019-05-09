@@ -21,3 +21,5 @@ Labs from functional and concurrent programming feat. Scala.
 1. [variantity and subtype polymorphism](./lab7/Lista7.scala)
 
 1. [nominal and structural types](./lab8/Lista8.scala)
+
+1. [concurrent programming, threads with shared memory, JVM low-level mechanisms](./lab9/Lista9.scala)
