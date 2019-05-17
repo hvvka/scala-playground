@@ -23,3 +23,7 @@ Labs from functional and concurrent programming feat. Scala.
 1. [nominal and structural types](./lab8/Lista8.scala)
 
 1. [concurrent programming, threads with shared memory, JVM low-level mechanisms](./lab9/Lista9.scala)
+
+1. [traditional concurrency tools for JVM](./lab10/Lista10.scala)
+
+1. [asynchronous programming: futures and promises](./lab11/Lista11.scala)
