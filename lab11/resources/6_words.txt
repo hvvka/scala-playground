@@ -1,0 +1,1 @@
+Programowanie asynchroniczne umożliwia programowanie bez blokad

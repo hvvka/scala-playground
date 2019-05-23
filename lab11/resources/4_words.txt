@@ -1,0 +1,1 @@
+Asynchroniczność oznacza brak oczekiwania

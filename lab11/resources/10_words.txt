@@ -1,0 +1,1 @@
+Promesa umożliwia jednorazowe zapisanie wartości w pamięci do późniejszego wykorzystania
