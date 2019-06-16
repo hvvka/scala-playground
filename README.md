@@ -27,3 +27,5 @@ Labs from functional and concurrent programming feat. Scala.
 1. [traditional concurrency tools for JVM](./lab10/Lista10.scala)
 
 1. [asynchronous programming: futures and promises](./lab11/Lista11.scala)
+
+1. [messaging: actors mechanism](./lab12/Lista12.scala)
