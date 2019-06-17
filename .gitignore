@@ -1,4 +1,21 @@
+# specific
 playground/
 *.pdf
-.DS_Store
 lab9/exercise.scala
+kolos/
+
+# macos
+.DS_Store
+
+# sbt
+bin/
+project/
+target/
+build/
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
